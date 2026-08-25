@@ -191,6 +191,29 @@ td:first-child{color:var(--sub)}
 .prod.acc-pink-b{border-left:4px solid #D98BA6}
 .prod.acc-toco-b{border-left:4px solid #E0B24C}
 
+/* ---------- v18 · 연구 영역 카드 (Q2) ---------- */
+.resgrid{display:grid;grid-template-columns:repeat(3,1fr) .88fr;gap:14px;margin-top:20px;align-items:stretch}
+.rescard{position:relative;background:var(--card);border:1px solid var(--hair);border-radius:9px;
+  padding:24px 15px 18px;text-align:center;display:flex;flex-direction:column}
+.rescard .rnum{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:800;margin:0 auto}
+.rescard h4{font-size:16px;color:var(--navy);font-weight:700;line-height:1.35;margin-top:13px}
+.rescard .rkr{display:block;font-size:13px;color:var(--beige);margin-top:6px;line-height:1.55}
+.rescard .rsub{display:block;font-size:11.5px;color:var(--taupe);margin-top:10px;padding-top:10px;
+  border-top:1px solid var(--hair);line-height:1.6}
+.rescard.emerging{border-style:dashed;background:transparent}
+.rescard.emerging .rnum{background:var(--taupe)}
+.rescard .etag{position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--taupe);
+  color:#fff;font-size:9.5px;font-weight:800;letter-spacing:.14em;padding:3px 10px;border-radius:3px;white-space:nowrap}
+
+.evconc{background:var(--navy);color:#fff;border-radius:9px;padding:24px 26px;text-align:center;margin-top:24px}
+.evconc .ec-en{font-size:clamp(17px,2.5vw,23px);font-weight:800;line-height:1.4}
+.evconc .ec-en .neq{color:var(--sandd);margin:0 12px;font-size:1.15em}
+.evconc .ec-kr{font-size:15px;margin-top:10px;opacity:.96;line-height:1.6}
+.evconc .ec-sub{font-size:12.5px;margin-top:15px;padding-top:13px;line-height:1.7;
+  border-top:1px solid rgba(255,255,255,.28);opacity:.82}
+@media print{.evconc{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
 /* ---------- accordion ---------- */
 .part h2{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .apxlinks a{display:block;font-size:13px;color:var(--navy);text-decoration:none;padding:3px 0;border-bottom:1px dotted var(--hair)}
@@ -968,37 +991,76 @@ body.present #apxbar{display:none}
 <div class="pn">Q2</div>
 <h2>What is it good for?<span class="pcount"></span></h2>
 <p class="qkr">엑소좀은 어디에 좋은가</p>
-<details class="item" data-g="A" data-g30="S" data-m="0.83" data-m30="0.5" id="p6-1"><summary><span class="ix">26</span><span class="sm-t"><span class="sm-h">What Is It Good For?</span><span class="sm-e">엑소좀은 어디에 좋은가</span><span class="sm-d">연구가 보고 있는 네 영역 · 그리고 아직 전임상이라는 사실</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30S">30:S</span><span class="min">50초</span><span class="chev">+</span></span></summary><div class="ibody">
-<div class="bigclaim">WHAT IS IT GOOD FOR?<span class="kr bg">엑소좀은 어디에 좋은가 — 오늘 가장 많이 받으실 질문입니다. 연구가 실제로 보고 있는 영역은 네 가지입니다.</span></div>
-
-<div class="fig grid g2" style="margin-top:18px">
-<div class="card"><h4 style="color:var(--navy);font-size:17px">Skin barrier &amp; conditioning</h4><span class="kr lt" style="margin-top:8px">피부 장벽과 컨디셔닝 — 피부의 결과 상태를 정돈하는 방향</span></div>
-<div class="card"><h4 style="color:var(--navy);font-size:17px">Skin comfort<br/><span style="font-size:13px;font-weight:400;color:var(--sub)">inflammatory-response biology</span></h4><span class="kr lt" style="margin-top:8px">피부의 편안함 — 염증 반응 생물학 영역</span></div>
-<div class="card"><h4 style="color:var(--navy);font-size:17px">Antioxidant-related biology</h4><span class="kr lt" style="margin-top:8px">항산화 관련 생물학</span></div>
-<div class="card"><h4 style="color:var(--navy);font-size:17px">Scalp &amp; hair-related biology</h4><span class="kr lt" style="margin-top:8px">두피와 모발 관련 생물학</span></div>
+<details class="item" data-g="A" data-g30="S" data-m="0.67" data-m30="0.45" id="p6-1"><summary><span class="ix">26</span><span class="sm-t"><span class="sm-h">What Are Plant EVs Being Studied For?</span><span class="sm-e">식물 유래 EV는 피부에서 무엇을 위해 연구되고 있을까?</span><span class="sm-d">장벽 · 염증반응 · 항산화/광노화/색소 세 영역 + 두피·모발은 초기 단계 · 연구 ≠ 완제품 효능</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30S">30:S</span><span class="min">40초</span><span class="chev">+</span></span></summary><div class="ibody">
+<div class="fig" style="margin-top:2px">
+<p style="font-size:15px;color:var(--sub);line-height:1.7">Research is currently concentrated in three areas — with a fourth still at an earlier stage.<span class="kr">현재 연구가 주목하는 영역은 크게 <b>세 가지</b>입니다. 그리고 네 번째 영역이 하나 더 있는데, 이쪽은 아직 더 초기 단계입니다.</span></p>
 </div>
 
-<div class="bigclaim" style="margin-top:20px">Promising — but much of the evidence is still preclinical.<span class="kr bg">가능성은 있습니다. <b>그러나 근거의 상당 부분은 아직 전임상 단계입니다.</b> 세포와 동물에서 본 결과이지, 완제품을 사람에게 쓴 임상 결과가 아닙니다.</span></div>
+<div class="resgrid">
+<div class="rescard">
+<span class="rnum">01</span>
+<h4>Skin Barrier &amp; Conditioning</h4>
+<span class="rkr">피부장벽 · 피부 컨디셔닝</span>
+<span class="rsub">barrier function · skin condition · hydration-related biology<span class="kr lt" style="text-align:center">장벽 기능 · 피부 상태 · 보습 관련 생물학</span></span>
+</div>
 
-<div class="state c">Preclinical findings are not translated directly into clinical cosmetic claims.<span class="kr bg">전임상 결과를 화장품의 임상적 효능 주장으로 곧바로 옮기지 않습니다.</span></div>
+<div class="rescard">
+<span class="rnum">02</span>
+<h4>Soothing &amp;<br/>Inflammatory-Response Biology</h4>
+<span class="rkr">피부 편안함 · 염증반응 관련 연구</span>
+<span class="rsub">inflammatory-response modulation<span class="kr lt" style="text-align:center">염증 반응 조절</span></span>
+</div>
 
-<div class="warn"><b>표현 주의.</b><br/>
-① 네 영역은 <b>연구가 보고 있는 방향</b>이지 <b>제품의 효능이 아닙니다.</b> 슬라이드를 넘기기 전에 반드시 “아직 전임상입니다”를 말로 붙이십시오.<br/>
-② <b>“Scalp &amp; hair-related biology”를 발모로 연결하지 마십시오.</b> 이 항목이 가장 위험합니다. 학술 영역의 이름일 뿐입니다.<br/>
-③ 개별 논문의 수치·저널명·저자를 이 슬라이드에서 인용하지 마십시오. 질문이 나오면 <b>부록 G3</b>(전임상 피부 모델 · 모발 모델)로 답하십시오.</div>
-<details class="script"><summary><span class="sc-i">▶</span><span class="sc-t">발표 스크립트</span><span class="sc-m">권장 50초 / “아직 전임상” 은 반드시 말로</span></summary><div class="sc-b">두 번째 질문입니다. 그래서 엑소좀은 어디에 좋은가.
+<div class="rescard">
+<span class="rnum">03</span>
+<h4>Antioxidant · Photoaging ·<br/>Pigmentation Biology</h4>
+<span class="rkr">항산화 · 광노화 · 색소 관련 연구</span>
+<span class="rsub">oxidative stress · tone-related biology<span class="kr lt" style="text-align:center">산화 스트레스 · 피부톤 관련 생물학</span></span>
+</div>
 
-이것이 여러분이 고객에게 가장 많이 받으실 질문일 겁니다. 정확하게 답씀드리겠습니다.
+<div class="rescard emerging">
+<span class="etag">EMERGING AREA</span>
+<span class="rnum">04</span>
+<h4>Scalp &amp; Hair<br/>Research</h4>
+<span class="rkr">두피 · 모발 연구</span>
+<span class="rsub">more early-stage<span class="kr lt" style="text-align:center">연구는 진행 중이지만 <b>근거는 더 초기 단계</b>입니다</span></span>
+</div>
+</div>
 
-현재 연구가 실제로 보고 있는 영역은 네 가지입니다. 피부 장벽과 컨디셔닝. 피부의 편안함, 학술적으로는 염증 반응 생물학입니다. 항산화 관련 생물학. 그리고 두피와 모발 관련 생물학입니다.
+<div class="evconc">
+<div class="ec-en">PROMISING SCIENCE<span class="neq">≠</span>PROVEN FINISHED-PRODUCT EFFICACY</div>
+<div class="ec-kr">유망한 연구 결과와 완제품의 검증된 효능은 <b>구분해야 합니다.</b></div>
+<div class="ec-sub">Much of the current evidence is still preclinical.<br/>현재 근거의 상당 부분은 아직 전임상 단계입니다.</div>
+</div>
 
-가능성은 분명히 있습니다. 그런데 여기서 제가 반드시 붙여야 하는 문장이 있습니다.
+<p class="src" style="margin-top:14px">위 네 영역은 <b>연구가 진행되고 있는 방향</b>이며, 특정 완제품의 효능을 나타내지 않습니다.<span class="tdo" data-todo="Q2에서 제시하는 네 개 연구 영역(장벽·염증반응·항산화/광노화/색소·두피모발)의 근거로 삼을 최신 리뷰 논문을 확정해 부록 참고 출처에 추가하십시오. 공개 발표 자료이므로 저자·저널·연도를 직접 대조해 확인해야 합니다. 확정 전에는 슬라이드에 논문명이나 수치를 넣지 마십시오." title="Q2에서 제시하는 네 개 연구 영역의 근거로 삼을 최신 리뷰 논문을 확정해 부록 참고 출처에 추가하십시오. 공개 발표 자료이므로 저자·저널·연도를 직접 대조해 확인해야 합니다.">리뷰 논문 출처 확정</span></p>
+<details class="script"><summary><span class="sc-i">▶</span><span class="sc-t">발표 스크립트</span><span class="sc-m">권장 40초 / 표현 주의는 스크립트 하단</span></summary><div class="sc-b">두 번째 질문입니다. 그래서 식물 유래 엑소좀은 피부에서 어디에 좋은가.
 
-근거의 상당 부분은 아직 전임상 단계입니다. 세포와 동물에서 본 결과이지, 완제품을 사람에게 써서 확인한 임상 결과가 아닙니다.
+현재 연구를 아주 쉽게 세 가지로 정리할 수 있습니다.
 
-저는 이 문장을 빼고 앞의 네 가지만 말씀드릴 수도 있었습니다. 그렇게 하는 회사도 많습니다. 하지만 그러면 오늘 이 자리의 의미가 없습니다.
+첫째는 피부장벽과 피부 컨디셔닝. 둘째는 피부의 염증반응과 편안함. 셋째는 항산화, 광노화, 색소와 관련된 피부생물학입니다.
 
-네 번째 항목, 두피와 모발 관련 생물학. 이건 학술 영역의 이름입니다. 발모를 뜻하는 것이 아닙니다. 이 구분은 특히 조심해 주십시오.</div></details>
+최근에는 두피와 모발 관련 연구도 나오고 있습니다. 다만 이쪽은 아직 더 초기 단계라고 보는 것이 맞습니다. 그래서 저는 앞의 세 가지와 같은 크기로 놓지 않았습니다.
+
+여기서 꼭 하나만 기억해 주십시오.
+
+이런 연구 결과가 있다는 것과, 특정 완제품을 발랐을 때 동일한 효능이 임상적으로 검증됐다는 것은 다른 이야기입니다.
+
+가능성은 충분히 있습니다. 하지만 아직 상당수의 근거는 전임상 단계입니다.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+【 발표자 전용 — 표현 주의 】
+
+① 네 영역은 연구가 보고 있는 방향이지 제품의 효능이 아닙니다. 슬라이드를 넘기기 전에 반드시 "아직 전임상입니다"를 말로 붙이십시오.
+
+② 04번 두피·모발을 발모로 연결하지 마십시오. 이 항목이 가장 위험합니다. EMERGING AREA로 따로 뺀 이유가 바로 이것이며, 앞의 세 가지와 같은 근거 수준으로 말하지 마십시오.
+
+③ 03번의 "광노화·색소"를 미백·주름개선 같은 기능성 표현으로 바꾸지 마십시오. 연구 영역의 이름까지만 말씀하십시오. EU에서 이 표현들은 완제품 실증자료가 있어야 사용할 수 있습니다.
+
+④ 개별 논문의 수치·저널명·저자를 이 슬라이드에서 인용하지 마십시오. 질문이 나오면 부록 G3(전임상 피부 모델 · 모발 모델 · 연구 지형)로 답하십시오.
+
+⑤ 상처 치유·조직 재생은 본문에서 일부러 뺐습니다. 문헌에는 많이 나오지만 에스테틱 청중에게는 곧바로 의료 표현으로 읽힙니다. 질문이 나올 때만 부록 G3에서 다루십시오.</div></details>
 </div></details>
 <details class="item" data-g="A" data-g30="S" data-m="1.0" data-m30="0.75" id="p6-benefit"><summary><span class="ix">27</span><span class="sm-t"><span class="sm-h">What Can You Say to Your Client?</span><span class="sm-e">고객에게는 뭐라고 말할 수 있는가</span><span class="sm-d">내일 바로 쓰실 수 있는 네 가지 표현 · 대표 질문 2개</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30S">30:S</span><span class="min">1분</span><span class="chev">+</span></span></summary><div class="ibody">
 <div class="bigclaim">WHAT CAN YOU SAY TO YOUR CLIENT?<span class="kr bg">그렇다면 고객에게는 뭐라고 말할 수 있는가 — 이 네 가지 표현은 <b>내일 바로 쓰셔도 되는 문장</b>입니다.</span></div>
@@ -1932,6 +1994,43 @@ front label에서 stem cell, regenerative, exosome이라는 이야기를 하는 
 중요한 점은 FDA가 인체유래 엑소좀 화장품 원료를 심사해서 승인 거부했다고 표현하면 안 된다는 것입니다. 미국은 화장품 원료 사전 승인제가 아니기 때문입니다.</div></details>
 </div></details>
 <h3 class="apxg">G3 — Research base<span class="kr lt">연구 근거 — “근거가 있나”를 물으면 · 모두 전임상임을 먼저 밝히십시오</span></h3>
+<details class="item" data-g="C" data-g30="C" data-m="0" data-m30="0" id="apx-resmap"><summary><span class="ix">00</span><span class="sm-t"><span class="sm-h">Why Researchers Are Interested in Plant EVs</span><span class="sm-e">왜 연구자들이 Plant EV에 관심을 갖는가 — 전체 연구 지형</span><span class="sm-d">본편 Q2에서 내린 영역 포함 · 상처 치유·조직 복구는 여기에서만 다루십시오</span></span><span class="sm-m"><span class="g gC">C</span><span class="g30 g30C">30:C</span><span class="apx-tag">부록</span><span class="chev">+</span></span></summary><div class="ibody">
+<div class="state sand">This slide exists because the honest answer to “what is it good for?” is a research map, not a benefit list.<span class="kr bg">“어디에 좋은가”에 대한 정직한 답은 효능 목록이 아니라 <b>연구 지형</b>이기 때문에 이 슬라이드가 있습니다.</span></div>
+
+<div class="lbl" style="margin-top:22px">In the main flow — Q2</div><p class="kr lt" style="margin-top:2px">본편 Q2에서 보여드리는 영역</p>
+<ul class="dots" style="margin-top:12px">
+<li><b>Skin barrier &amp; conditioning</b><span class="kr lt">피부장벽 · 피부 컨디셔닝 · 보습 관련 생물학</span></li>
+<li><b>Soothing &amp; inflammatory-response biology</b><span class="kr lt">피부 편안함 · 염증 반응 조절</span></li>
+<li><b>Antioxidant · photoaging · pigmentation biology</b><span class="kr lt">항산화 · 광노화 · 색소 관련 피부생물학</span></li>
+<li><b>Scalp &amp; hair research</b> — earlier stage<span class="kr lt">두피 · 모발 — 더 초기 단계</span></li>
+</ul>
+
+<div class="lbl" style="margin-top:24px">Kept out of the main flow — on request only</div><p class="kr lt" style="margin-top:2px">본편에서 일부러 뺀 영역 — 질문이 나올 때만 여십시오</p>
+<div class="fig grid g2" style="margin-top:12px;align-items:start">
+<div class="card plain">
+<h4 style="color:var(--navy);font-size:16px">Wound &amp; tissue repair biology</h4>
+<span class="kr lt" style="margin-top:6px">상처 · 조직 복구 관련 생물학</span>
+<ul class="dots taupe" style="margin-top:12px">
+<li>Inflammatory-response modulation<span class="kr lt">염증 반응 조절</span></li>
+<li>Angiogenesis<span class="kr lt">혈관 신생</span></li>
+<li>Cell proliferation &amp; migration<span class="kr lt">세포 증식과 이동</span></li>
+</ul>
+</div>
+<div class="card">
+<h4 style="color:var(--warn);font-size:16px">Why it is not on the main slide</h4>
+<span class="kr lt" style="margin-top:6px">왜 본편 슬라이드에 넣지 않았는가</span>
+<p class="kr" style="margin-top:12px">에스테틱 청중에게 “상처 치유 · 조직 재생”은 곧바로 <b>의료적 표현</b>으로 읽힙니다. 화장품 관리의 범위를 벗어난 기대를 만들고, EU 화장품 광고 기준에서도 사용할 수 없는 영역입니다.</p>
+<p class="kr" style="margin-top:10px">연구 문헌에 자주 등장하는 것은 사실이므로 <b>학술적 맥락을 묻는 질문에만</b> 이 슬라이드로 답하십시오.</p>
+</div>
+</div>
+
+<div class="state c">All of the above is preclinical research context — cell and animal models. It is not finished-product efficacy evidence.<span class="kr bg">위 내용은 모두 <b>전임상 연구 맥락</b>입니다. 세포와 동물 모델의 결과이며, 완제품 효능의 근거가 아닙니다.</span></div>
+
+<div class="warn"><b>이 슬라이드를 열 때.</b><br/>
+① <b>“전임상 연구입니다”를 먼저 말한 뒤</b> 내용을 설명하십시오. 순서를 바꾸지 마십시오.<br/>
+② 상처 치유·재생 관련 내용을 <b>자사 제품과 연결하지 마십시오.</b> “이 분야에서 이런 연구들이 진행되고 있다”까지가 한계선입니다.<br/>
+③ 개별 논문을 인용하려면 <b>저자·저널·연도를 직접 대조 확인한 것만</b> 사용하십시오.<span class="tdo" data-todo="이 슬라이드에서 언급하는 연구 영역(상처·조직 복구, 혈관 신생, 세포 증식·이동)의 근거 리뷰 논문을 확정하고 부록 참고 출처에 추가하십시오. 확정 전에는 구두로도 논문명을 말하지 마십시오." title="이 슬라이드에서 언급하는 연구 영역의 근거 리뷰 논문을 확정하고 부록 참고 출처에 추가하십시오.">리뷰 논문 출처 확정</span></div>
+</div></details>
 <details class="item" data-g="C" data-g30="C" data-m="0" data-m30="0" id="p6-0"><summary><span class="ix">25</span><span class="sm-t"><span class="sm-h">The Literature Is Growing</span><span class="sm-e">식물 EV 문헌은 빠르게 증가하고 있습니다</span><span class="sm-d">개형 도식 — 실제 검색식·건수 확정 전까지 백업 슬라이드로만 보유</span></span><span class="sm-m"><span class="g gC">C</span><span class="g30 g30C">30:C</span><span class="min">0:30</span><span class="apx-tag">부록</span><span class="chev">+</span></span></summary><div class="ibody">
 <div class="fig card" style="position:relative">
 <p class="lbl">Number of publications</p><p class="kr lt">논문 발표 건수</p>
@@ -3130,7 +3229,7 @@ apply(); openHash(); upd(); markToc();
    문서 버전 — 여기 두 줄만 고치면 상단 빨간 배너 · 헤더 칩 · 브라우저 탭 제목이
    모두 자동으로 바뀝니다. 다른 곳은 손대지 마십시오.
    ===================================================================== */
-var DOC_VERSION = 18;                 // ← 개정할 때마다 이 숫자만 올리십시오
+var DOC_VERSION = 19;                 // ← 개정할 때마다 이 숫자만 올리십시오
 var DOC_DATE    = '2026-08-25';       // ← 개정일
 /* ===================================================================== */
 (function(){
