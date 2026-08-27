@@ -451,6 +451,44 @@ body.present .nbox,body.present #ntpanel{display:none !important}
 .nt-bar button.alt{background:#fff;color:var(--ntg);border-color:var(--ntg)}
 .nt-msg{color:var(--ntg)}
 @media print{#top button#ntsave{display:none}}
+
+
+
+/* ---------- v26 · 오프닝 환영 문구 ---------- */
+.wel{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--taupe);margin-bottom:16px}
+.wel .kr{display:block;letter-spacing:0;text-transform:none;font-size:12.5px;
+  font-weight:600;color:var(--sub);margin-top:5px}
+/* ---------- v26 · 부록 임시 표시 ---------- */
+.apx-temp{display:inline-block;margin-left:12px;vertical-align:middle;
+  font-size:11px;font-weight:800;letter-spacing:.02em;color:var(--warn);
+  background:var(--warnbg);border:1px solid var(--warnln);border-radius:5px;padding:4px 9px}
+.pn-temp{display:inline-block;margin-left:7px;font-size:9.5px;font-weight:800;
+  color:var(--warn);background:var(--warnbg);border:1px solid var(--warnln);
+  border-radius:4px;padding:1px 5px;vertical-align:middle}
+/* ---------- v26 · 질문 라이브러리 ---------- */
+.qa-tools{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:0 0 18px}
+.qa-t{font-size:12px;font-weight:800;padding:7px 14px;border-radius:7px;cursor:pointer;
+  border:1px solid var(--hair);background:#fff;color:var(--navy)}
+.qa-t.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.qa-hint{font-size:11.5px;color:var(--sub)}
+.qa-cat{margin-top:24px}
+.qa-ch{font-size:11px;font-weight:800;letter-spacing:.13em;color:var(--taupe);
+  padding-bottom:7px;border-bottom:1px solid var(--hair);margin-bottom:4px}
+.qa-ch .kr{display:block;letter-spacing:0;font-size:11.5px;font-weight:700;color:var(--sub);margin-top:3px}
+.qa-q{display:grid;grid-template-columns:52px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--sandl)}
+.qa-n{font-size:15px;font-weight:800;color:var(--lblue);font-variant-numeric:tabular-nums}
+.qa-core{display:block;font-size:8.5px;font-weight:800;letter-spacing:.08em;color:#0B5C2E;
+  background:#E7F6EC;border:1px solid #8FCFA9;border-radius:3px;padding:1px 4px;margin-top:5px;text-align:center}
+.qa-en{font-size:15px;font-weight:700;color:var(--navy);line-height:1.4}
+.qa-kr{font-size:12px;color:var(--sub);margin-top:3px}
+.qa-a{font-size:14px;color:var(--ink);line-height:1.7;margin-top:9px}
+.qa-a .kr{display:block;margin-top:5px}
+.qa-more{margin-top:22px;padding:14px 16px;background:var(--sandl);border-radius:8px;
+  font-size:14px;color:var(--navy)}
+.qa-more .kr{display:block;font-size:12.5px;color:var(--sub);margin-top:4px}
+.qa-lib.core-only .qa-q:not(.core){display:none}
+.qa-lib.core-only .qa-cat:not(:has(.qa-q.core)){display:none}
 /* ---------- v13 · 소포 구조 비교 / 분류 도식 ---------- */
 .vesicle-img{width:100%;max-width:150px;height:auto;display:block;margin:0 auto 12px;cursor:zoom-in}
 .figimg{width:100%;max-width:430px;height:auto;display:block;margin-top:14px;cursor:zoom-in;
@@ -690,58 +728,59 @@ body.present #apxbar{display:none}
 <div class="pn">Opening</div>
 <h2>Opening — Why This Seminar<span class="pcount"></span></h2>
 <p class="qkr">오프닝 — 왜 이 세미나인가</p>
-<details class="item" data-g="A" data-g30="S" data-m="1.25" data-m30="0.75" id="p1-why"><summary><span class="ix">01</span><span class="sm-t"><span class="sm-h">Why This Seminar — and Why Now</span><span class="sm-e">왜 지금 이 세미나인가</span><span class="sm-d">현장에서 반복된 질문에서 출발 · 오늘 하는 것과 하지 않는 것</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30S">30:S</span><span class="min">1분 15초</span><span class="chev">+</span></span></summary><div class="ibody">
-<div class="bigclaim">This session did not start with a product.<br/>It started with a question you kept asking.
-<span class="kr">이 세미나는 제품에서 출발한 것이 아닙니다. 여러분이 현장에서 계속 물어오신 질문에서 출발했습니다.</span><span class="tdo" data-ck="27" data-todo="이전 스페인 세션 참석자가 섞여 있는지 확인이 필요합니다. 반복 세션이라면 도입에서 그 사실을 인정하는 문장을 넣어야 하고, 12부의 “지난 세션에서 받은 질문” 서술과도 정합성을 맞춰야 합니다." title="이전 스페인 세션 참석자가 섞여 있는지 확인이 필요합니다. 반복 세션이라면 도입에서 그 사실을 인정하는 문장을 넣어야 하고, 12부의 “지난 세션에서 받은 질문” 서술과도 정합성을 맞춰야 합니다.">반복 세션 여부</span></div>
-<div class="lbl">What our distribution partner has been hearing</div>
-<p class="kr" style="margin-top:2px">유통 파트너가 현장에서 듣고 있는 것</p>
-<div class="fig grid g3" style="margin-top:12px">
-<div class="card">
-<span class="lbl">01 · THE CATEGORY RETURNED</span>
-<h4 style="margin-top:8px">Shifting Exosome Trends</h4>
-<p>Exosome-labelled boosters became widely known in Europe and other overseas markets from around 2023, and arrivals in the professional channel have increased again.</p>
-<span class="kr lt">엑소좀을 표기한 부스터가 유럽과 해외 시장에 본격적으로 알려진 것은 2023년 무렵입니다. 그리고 전문가 채널로의 유입이 다시 늘고 있습니다.</span><span class="tdo" data-ck="24" data-todo="유통 파트너의 현장 관찰입니다. 시장 조사 데이터가 아니므로 수치·점유율·업체 수를 붙일 수 없습니다. 파트너에게 서술 범위를 서면으로 확인받으십시오." title="유통 파트너의 현장 관찰입니다. 시장 조사 데이터가 아니므로 수치·점유율·업체 수를 붙일 수 없습니다. 파트너에게 서술 범위를 서면으로 확인받으십시오.">출처 확정</span>
+<details class="item" data-g="A" data-g30="S" data-m="2.0" data-m30="1.25" id="p1-why"><summary><span class="ix">01</span><span class="sm-t"><span class="sm-h">Welcome — and the Five Questions</span><span class="sm-e">환영 인사 · 왜 지금인가 · 오늘의 다섯 질문</span><span class="sm-d">짧은 문제 제기 + 오늘 답할 다섯 질문 · 이전 3페이지를 2페이지로 통합</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30S">30:S</span><span class="min">2분</span><span class="chev">+</span></span></summary><div class="ibody">
+<div class="wel">Welcome to our Spain Seminar<span class="kr">스페인에서 함께해 주셔서 감사합니다.</span></div>
+
+<div class="bigclaim">This session did not start with a product.<br/>It started with a question you kept asking.<span class="kr bg">이 세미나는 제품에서 출발한 것이 아닙니다. 여러분이 현장에서 계속 물어오신 질문에서 출발했습니다.<span class="tdo" data-ck="27" data-todo="이전 스페인 세션 참석자가 섞여 있는지 확인이 필요합니다. 반복 세션이라면 도입에서 그 사실을 인정하는 문장을 넣어야 하고, 12부의 “지난 세션에서 받은 질문” 서술과도 정합성을 맞춰야 합니다." title="이전 스페인 세션 참석자가 섞여 있는지 확인이 필요합니다. 반복 세션이라면 도입에서 그 사실을 인정하는 문장을 넣어야 하고, 12부의 “지난 세션에서 받은 질문” 서술과도 정합성을 맞춰야 합니다.">반복 세션 여부</span></span></div>
+
+<p style="font-size:15.5px;line-height:1.8;margin-top:18px;color:var(--ink)">Exosome-labelled boosters have become increasingly visible in the European and overseas professional market in recent years. They arrive in similar vials at very different price points — <b>ours included</b> — and from the outside they cannot be told apart. What looks identical on the shelf can rest on very different science and development thinking. So the same question keeps coming back: <b style="color:var(--navy)">what is actually different?</b><span class="tdo" data-ck="24" data-todo="유통 파트너의 현장 관찰입니다. 시장 조사 데이터가 아니므로 수치·점유율·업체 수를 붙일 수 없습니다. 파트너에게 서술 범위를 서면으로 확인받으십시오." title="유통 파트너의 현장 관찰입니다. 시장 조사 데이터가 아니므로 수치·점유율·업체 수를 붙일 수 없습니다. 파트너에게 서술 범위를 서면으로 확인받으십시오.">출처 확정</span></p>
+<span class="kr lt" style="display:block;margin-top:8px">엑소좀을 표기한 부스터가 유럽과 해외 전문가 시장에서 눈에 띄게 늘어난 것은 최근 몇 해의 일입니다. 비슷한 바이알에 담겨 가격만 크게 다른 제품들이 들어오고, 겉으로는 구분되지 않습니다. <b>저희 제품도 같은 바이알입니다.</b> 겉모습이 같아도 그 뒤의 과학과 개발 철학은 다를 수 있습니다. 그래서 같은 질문이 반복됩니다 — 무엇이 실제로 다른가.</span>
+
+<div class="grid g2" style="margin-top:20px">
+<div class="card"><div class="lbl">This category</div><p style="margin-top:8px">Many trend-driven products are developed through OEM/ODM models.</p><span class="kr lt">트렌드에 맞춰 나오는 제품 상당수는 OEM/ODM 방식으로 개발됩니다.</span></div>
+<div class="card tint"><div class="lbl">Dr. BAE</div><p style="margin-top:8px">A research-led brand built around long-term study, formulation thinking and continuous market distribution.</p><span class="kr lt">닥터배는 오랜 연구와 처방 설계, 그리고 지속적인 시장 유통 위에 만들어진 research-led 브랜드입니다.</span></div>
 </div>
-<div class="card">
-<span class="lbl">02 · THEY LOOK THE SAME</span>
-<h4 style="margin-top:8px">Same vial, different content</h4>
-<p>Products arrive in similar vials at very different price points. From the outside they cannot be told apart — <b>including ours</b>.</p>
-<span class="kr lt">비슷한 바이알에 담겨 가격대만 크게 다른 제품들이 들어옵니다. 겉으로는 구분되지 않습니다. 저희 제품도 같은 바이알 형태입니다.</span>
+
+<div class="hr" style="margin:26px 0 20px"></div>
+
+<div class="bigclaim">Five questions.<br/>Five blocks. In this order.<span class="kr bg">오늘은 다섯 개의 질문에 답합니다. 각 질문이 곧 오늘의 한 블록입니다. 화면 위쪽 띠를 보시면 지금 어느 질문에 답하고 있는지 항상 알 수 있습니다.</span></div>
+
+<div class="fig" style="margin-top:14px">
+<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
+<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q1</p>
+<div><p style="font-weight:700;color:var(--navy);font-size:17px">What is an exosome — and why the sudden attention?</p><span class="kr lt">엑소좀은 무엇인가, 왜 갑자기 주목받았는가</span></div></div>
+<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
+<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q2</p>
+<div><p style="font-weight:700;color:var(--navy);font-size:17px">What is it good for?</p><span class="kr lt">엑소좀은 어디에 좋은가</span></div></div>
+<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
+<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q3</p>
+<div><p style="font-weight:700;color:var(--navy);font-size:17px">What is the Dr. BAE exosome — and what is different?</p><span class="kr lt">닥터배 엑소좀은 무엇이고, 무엇이 다른가</span></div></div>
+<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
+<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q4</p>
+<div><p style="font-weight:700;color:var(--navy);font-size:17px">What boosters were built from it?</p><span class="kr lt">그것으로 어떤 스킨부스터를 만들었는가</span></div></div>
+<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left;border-bottom:none">
+<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q5</p>
+<div><p style="font-weight:700;color:var(--navy);font-size:17px">How is it used on skin and scalp?</p><span class="kr lt">피부와 두피에 어떻게 쓰는가</span></div></div>
 </div>
-<div class="card">
-<span class="lbl">03 · SO THE QUESTIONS CAME</span>
-<h4 style="margin-top:8px">“Which one is which?”</h4>
-<p>Enough professionals asked the same questions that we decided the answer should come from the researcher, in public — not from a brochure.</p>
-<span class="kr lt">같은 질문이 반복해서 올라왔습니다. 그래서 브로슈어가 아니라 연구자가 공개된 자리에서 직접 답하기로 했습니다.</span>
+
+<div class="state c">The title of this session is “the truth about exosomes”. That includes the parts we cannot claim.<span class="kr bg">이 세미나의 제목은 “엑소좀에 대한 진실”입니다. 여기에는 저희가 주장할 수 없는 부분까지 포함됩니다.</span></div>
+<div class="grid g4" style="margin-top:18px">
+<div class="card"><h4>Science</h4><p>What an exosome actually is.</p><span class="kr lt">엑소좀의 정의</span></div>
+<div class="card"><h4>Trend</h4><p>Why the attention grew so quickly.</p><span class="kr lt">왜 주목받았는가</span></div>
+<div class="card"><h4>Limitations</h4><p>What is still open, stated out loud.</p><span class="kr lt">현재의 한계와 가능성</span></div>
+<div class="card"><h4>Development</h4><p>How our research team built the products.</p><span class="kr lt">연구팀의 개발 철학</span></div>
 </div>
-</div>
-<div class="hr" style="margin:24px 0 18px"></div>
-<div class="grid g2">
-<div class="card tint">
-<h4>What today is</h4><p class="kr" style="margin-bottom:8px">오늘 하는 것</p>
-<ul class="dots">
-<li>A framework for evaluating <b>any</b> exosome supplier<span class="kr lt">어떤 공급사의 엑소좀 제품이든 스스로 판단하실 수 있는 기준</span></li>
-<li>Science, regulation, formulation — in that order<span class="kr lt">과학 → 규제 → 처방의 순서로</span></li>
-<li>The limits stated out loud, including ours<span class="kr lt">한계까지 함께 말씀드립니다. 저희 제품의 한계도 포함됩니다</span></li>
-</ul>
-</div>
-<div class="card">
-<h4>What today is not</h4><p class="kr" style="margin-bottom:8px">오늘 하지 않는 것</p>
-<ul class="dots taupe">
-<li>Not a product launch<span class="kr lt">신제품 발표가 아닙니다</span></li>
-<li>Not a comparison against named competitors<span class="kr lt">특정 경쟁사와의 비교가 아닙니다</span></li>
-<li>Not a promise of clinical results<span class="kr lt">임상 결과에 대한 약속이 아닙니다</span></li>
-</ul>
-</div>
-</div>
-<div class="state c">Apply everything you hear today to us as well. That is the point of this hour.<span class="kr bg">오늘 들으신 기준을 저희 제품에도 그대로 적용해 주십시오. 그것이 이 한 시간의 목적입니다.</span></div>
 <div class="warn"><b>표현 및 사실 확인 주의 — 오프닝이므로 특히 중요합니다.</b><br/>
-① 01번 카드의 “2023년 무렵 해외 인지 확대”와 “유입 증가”는 <b>유통 파트너의 현장 관찰</b>입니다. 시장 조사 데이터가 아니므로 수치·점유율·업체 수를 붙이지 마십시오(확인 항목 24).<br/>
-② 02번 카드는 <b>반드시 자사를 포함해서</b> 말씀하십시오. “저가 제품이 문제”로 들리면 “그럼 당신 바이알은 왜 다른가”라는 반문이 즉시 나오고, 그 답이 곧 오늘 발표 전체입니다. 자기 포함이 이 슬라이드의 안전장치입니다.<br/>
-③ 특정 업체의 퇴출·폐업·리라벨링, 특정 국가의 규제 조치를 <b>근거 없이 언급하지 마십시오.</b> 규제 관련 사실은 5부에서 출처와 함께만 다룹니다(655/2013 — 공정성).<br/>
-④ “시장이 망가졌다”, “가짜가 많다” 같은 단정적 시장 평가는 사용하지 마십시오. 관찰된 사실(구분이 어렵다, 질문이 늘었다)까지만 말씀하십시오.<br/>
-⑤ 이번 세션이 <b>반복 세션</b>인지 확인하고, 이전 참석자가 섞여 있다면 도입에서 그 사실을 인정하는 문장을 넣으십시오(확인 항목 27).</div>
-<details class="script"><summary><span class="sc-i">▶</span><span class="sc-t">발표 스크립트</span><span class="sc-m">권장 1분 15초 / 오프닝 후크</span></summary><div class="sc-b">먼저 이 자리가 왜 만들어졌는지 말씀드리고 시작하겠습니다.
+① 최근 몇 해의 인지 확대와 유입 증가는 <b>유통 파트너의 현장 관찰</b>입니다. 시장 조사 데이터가 아니므로 수치·점유율·업체 수를 붙이지 마십시오(확인 항목 24). 연도를 단정하지 말고 “최근 몇 해” 수준으로 말씀하십시오.<br/>
+② 바이알 이야기는 <b>반드시 자사를 포함해서</b> 말씀하십시오. “저가 제품이 문제”로 들리면 “그럼 당신 바이알은 왜 다른가”라는 반문이 즉시 나오고, 그 답이 곧 오늘 발표 전체입니다.<br/>
+③ OEM/ODM 언급은 <b>업계 일반의 개발 방식 설명</b>까지만 하십시오. “대부분이 OEM이다”, “연구자가 만든 브랜드는 거의 없다” 같은 단정형 비교는 사용하지 마십시오. 타사를 깎는 대신 저희 정체성을 설명하는 방향으로 말씀하십시오.<br/>
+④ 특정 업체의 퇴출·폐업·리라벨링, 특정 국가의 규제 조치를 <b>근거 없이 언급하지 마십시오.</b> 규제 사실은 해당 블록에서 출처와 함께만 다룹니다(655/2013 — 공정성).<br/>
+⑤ “시장이 망가졌다”, “가짜가 많다” 같은 단정적 시장 평가는 사용하지 마십시오. 관찰된 사실(구분이 어렵다, 질문이 늘었다)까지만 말씀하십시오.<br/>
+⑥ 이 다섯 질문은 <b>발표 구조 그 자체</b>입니다. 블록이 바뀔 때마다 “이제 두 번째 질문입니다”처럼 <b>말로 한 번 더 짚어 주십시오.</b><br/>
+⑦ 마무리에서 <b>같은 화면이 한 번 더 나옵니다.</b> 그때 다섯 개의 답을 한 문장씩 드립니다. 여기서는 답을 미리 말하지 마십시오.<br/>
+⑧ 초대장의 네 주제는 <b>이 다섯 질문 안에 모두 들어 있습니다.</b> 따로 나열하면 “다섯 개인가 네 개인가”로 혼란스러워하므로 나열하지 마십시오.<br/>
+⑨ 이번 세션이 <b>반복 세션</b>인지 확인하고, 이전 참석자가 섞여 있다면 도입에서 그 사실을 인정하는 문장을 넣으십시오(확인 항목 27).</div>
+<details class="script"><summary><span class="sc-i">▶</span><span class="sc-t">발표 스크립트</span><span class="sc-m">권장 2분 / 오프닝 후크</span></summary><div class="sc-b">먼저 이 자리가 왜 만들어졌는지 말씀드리고 시작하겠습니다.
 
 저희가 새 제품을 내놨기 때문이 아닙니다. 여러분이 계속 물어오셨기 때문입니다.
 
@@ -757,7 +796,13 @@ body.present #apxbar{display:none}
 
 오늘 한 시간 동안 제가 하려는 것은 제품을 파는 것이 아니라, 어떤 공급사가 어떤 엑소좀을 들고 오더라도 여러분이 스스로 판단하실 수 있는 기준을 드리는 것입니다.
 
-그 기준을 저희 제품에도 똑같이 적용해 주십시오. 그게 이 자리의 목적입니다.</div></details>
+그 기준을 저희 제품에도 똑같이 적용해 주십시오. 그게 이 자리의 목적입니다.
+
+초대장에서 네 가지를 약속드렸습니다. 식물 엑소좀이 실제로 무엇인지, 다른 세포외소포와 어떻게 다른지, 기술과 순도와 효능은 어떤지, 그리고 엑소토카인은 어떤 제품인지입니다.
+오늘 이 네 가지를 모두 다룹니다. 어느 부분에서 다루는지 먼저 보여드리겠습니다.
+그리고 한 가지 미리 말씀드리고 싶습니다. 오늘 세미나 제목이 엑소좀에 대한 진실입니다. 진실에는 우리가 말할 수 있는 것뿐 아니라 말할 수 없는 것도 포함됩니다.
+저는 오늘 엑소좀이 모든 것을 해결한다고 말하지 않을 것입니다. 대신 무엇이 과학적으로 확인되었고, 무엇이 아직 연구 중이며, 화장품으로서 무엇을 주장할 수 있고 무엇을 주장할 수 없는지를 정확히 구분해서 말씀드리겠습니다.
+그것이 전문가 여러분께 실제로 도움이 되는 정보라고 생각합니다.</div></details>
 </div></details>
 <details class="item" data-g="A" data-g30="A" data-m="1.0" data-m30="0.5" id="p1-0"><summary><span class="ix">01</span><span class="sm-t"><span class="sm-h">Speaker</span><span class="sm-e">발표자 소개</span><span class="sm-d">학력과 현재 소속 · 외부 검증 요약</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30A">30:A</span><span class="min">1분</span><span class="chev">+</span></span></summary><div class="ibody">
 <div class="fig pgrid" style="grid-template-columns:200px 1fr;gap:24px;align-items:start">
@@ -786,38 +831,7 @@ body.present #apxbar{display:none}
 대학 연구실에서 보는 기술의 언어와 시장에서 사용하는 광고의 언어 사이에는 상당히 큰 차이가 있습니다.
 오늘 발표 내내 제 이름과 소속이 계속 등장할 텐데, 이는 제가 이 처방을 설계했고 그 판단에 책임을 진다는 뜻입니다.</div></details>
 </div></details>
-<details class="item" data-g="A" data-g30="S" data-m="1.0" data-m30="0.75" id="p1-agenda"><summary><span class="ix">05</span><span class="sm-t"><span class="sm-h">Five Questions, in Order</span><span class="sm-e">오늘 다룰 다섯 개의 질문</span><span class="sm-d">다섯 질문이 곧 다섯 블록 · 초대장 4주제 대응표는 삭제</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30S">30:S</span><span class="min">1분</span><span class="chev">+</span></span></summary><div class="ibody">
-<div class="bigclaim">Five questions.<br/>Five blocks. In this order.<span class="kr bg">오늘은 다섯 개의 질문에 답합니다. 각 질문이 곧 오늘의 한 블록입니다. 화면 위쪽 띠를 보시면 지금 어느 질문에 답하고 있는지 항상 알 수 있습니다.</span></div>
 
-<div class="fig" style="margin-top:14px">
-<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
-<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q1</p>
-<div><p style="font-weight:700;color:var(--navy);font-size:17px">What is an exosome — and why the sudden attention?</p><span class="kr lt">엑소좀은 무엇인가, 왜 갑자기 주목받았는가</span></div></div>
-<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
-<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q2</p>
-<div><p style="font-weight:700;color:var(--navy);font-size:17px">What is it good for?</p><span class="kr lt">엑소좀은 어디에 좋은가</span></div></div>
-<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
-<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q3</p>
-<div><p style="font-weight:700;color:var(--navy);font-size:17px">What is the Dr. BAE exosome — and what is different?</p><span class="kr lt">닥터배 엑소좀은 무엇이고, 무엇이 다른가</span></div></div>
-<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left">
-<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q4</p>
-<div><p style="font-weight:700;color:var(--navy);font-size:17px">What boosters were built from it?</p><span class="kr lt">그것으로 어떤 스킨부스터를 만들었는가</span></div></div>
-<div class="neqrow" style="grid-template-columns:52px 1fr;text-align:left;border-bottom:none">
-<p style="text-align:left;font-size:20px;font-weight:700;color:var(--lblue)">Q5</p>
-<div><p style="font-weight:700;color:var(--navy);font-size:17px">How is it used on skin and scalp?</p><span class="kr lt">피부와 두피에 어떻게 쓰는가</span></div></div>
-</div>
-
-<div class="state c">The title of this session is “the truth about exosomes”. That includes the parts we cannot claim.<span class="kr bg">이 세미나의 제목은 “엑소좀에 대한 진실”입니다. 여기에는 저희가 주장할 수 없는 부분까지 포함됩니다.</span></div>
-
-<div class="warn"><b>진행 안내.</b><br/>
-① 이 다섯 질문은 <b>발표 구조 그 자체</b>입니다. 블록이 바뀔 때마다 “이제 두 번째 질문입니다”처럼 <b>말로 한 번 더 짚어 주십시오.</b> 비전공자 청중은 시각 표시만으로는 위치를 놓칩니다.<br/>
-② 마무리에서 <b>같은 화면이 한 번 더 나옵니다.</b> 그때 다섯 개의 답을 한 문장씩 드립니다. 여기서는 답을 미리 말하지 마십시오.<br/>
-③ 초대장에 예고된 네 주제(¿Qué son realmente los exosomas vegetales? / Diferencias con otras vesículas / Tecnología, pureza y eficacia / Exotokine)는 <b>이 다섯 질문 안에 모두 들어 있습니다.</b> 예고 항목을 따로 나열하면 청중이 “다섯 개인가 네 개인가”로 혼란스러워하므로 나열하지 마시고, 질문이 나오면 부록으로 답하십시오.</div>
-<details class="script"><summary><span class="sc-i">▶</span><span class="sc-t">발표 스크립트</span><span class="sc-m">권장 1분 / 사수 슬라이드</span></summary><div class="sc-b">초대장에서 네 가지를 약속드렸습니다. 식물 엑소좀이 실제로 무엇인지, 다른 세포외소포와 어떻게 다른지, 기술과 순도와 효능은 어떤지, 그리고 엑소토카인은 어떤 제품인지입니다.
-오늘 이 네 가지를 모두 다룹니다. 어느 부분에서 다루는지 먼저 보여드리겠습니다.
-그리고 한 가지 미리 말씀드리고 싶습니다. 오늘 세미나 제목이 엑소좀에 대한 진실입니다. 진실에는 우리가 말할 수 있는 것뿐 아니라 말할 수 없는 것도 포함됩니다.
-저는 오늘 엑소좀이 모든 것을 해결한다고 말하지 않을 것입니다. 대신 무엇이 과학적으로 확인되었고, 무엇이 아직 연구 중이며, 화장품으로서 무엇을 주장할 수 있고 무엇을 주장할 수 없는지를 정확히 구분해서 말씀드리겠습니다.
-그것이 전문가 여러분께 실제로 도움이 되는 정보라고 생각합니다.</div></details></div></details>
 
 </section>
 <!-- ============ Q1 ============ -->
@@ -1590,52 +1604,19 @@ Muchas gracias.</div>
 <div class="pn">Q&amp;A</div>
 <h2>Frequently Asked Questions<span class="pcount"></span></h2>
 <p class="qkr">항상 받는 질문들 — 질문 시간을 열기 전에 먼저 답해드립니다</p>
-<details class="item" data-g="A" data-g30="A" data-m="1.5" data-m30="0.75" id="p12-faq"><summary><span class="ix">59</span><span class="sm-t"><span class="sm-h">Questions I Am Always Asked</span><span class="sm-e">항상 받는 질문들 — 미리 답해드립니다</span><span class="sm-d">질문 시간 전에 먼저 답하는 8문 · 지난 세션 실제 질문 5문은 부록 G6</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30A">30:A</span><span class="min">1분 30초</span><span class="chev">+</span></span></summary><div class="ibody">
-<p style="font-size:16px;margin-bottom:6px;color:var(--navy);font-weight:700">Before you ask — these are the questions I receive in every professional seminar.</p>
-<p class="kr" style="margin-bottom:20px">질문 시간 전에, 모든 전문가 세미나에서 반복해서 받는 질문들을 먼저 답해드립니다.</p>
-<div class="fig">
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">01</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"Can I inject it, or combine it with a device?"</b><span class="kr">두 질문을 반드시 나누어 보셔야 합니다. <b>주사와 침습적 투여는 어떤 시장에서도 저희 제품의 intended use가 아닙니다 — 예외가 없습니다.</b> 장비 병용은 별개의 문제이며 허용 범위가 국가마다 다릅니다. 한국에서는 이 용도로 허용되지 않으며, 일부 해외 시장에서는 장비 분류·전문직역 범위·지역 규정에 따라 달라질 수 있습니다. 다만 그 판단은 해당 지역 규정과 시술자의 자격 범위에 따르는 것이고 저희가 승인해 드리는 것이 아닙니다. 제품 쪽에서 확정적으로 말씀드릴 수 있는 것은 하나입니다 — 저희 제품의 intended use는 topical cosmetic application입니다.</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">02</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"Is it human-derived? Is that safe?"</b><span class="kr">인체유래가 아닙니다. 첫 제품부터 지금까지 식물유래(병풀 캘러스 EV)만 사용해 왔고, EU 화장품 프레임워크는 human-origin cells, tissues or products를 금지합니다. 저희 원료의 source는 INCI 명칭과 관련 문서로 확인하실 수 있습니다.</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">03</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"What can I actually promise my clients?"</b><span class="kr">치료·재생·발모 같은 의학적 표현 대신 화장품 범위의 표현을 사용하십시오. 다만 진정, 컨디셔닝, 보습 같은 화장품 claim도 완제품 실증자료가 뒷받침해야 합니다.</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">04</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"Is the product EU-compliant — and is every salon/device use automatically allowed?"</b><span class="kr">두 질문을 나누어 보셔야 합니다. EU 시장에서 화장품으로 유통되기 위한 적합성은 RP, PIF·CPSR, CPNP notification, label·claims 등으로 확인합니다. 저희 네 제품은 이 절차를 마쳤습니다 — RP 지정, PIF·CPSR 보유, CPNP 신고 완료 상태로 유럽에 수출 중입니다. 다만 CPNP는 신고이지 허가가 아니며, 특정 살롱에서 특정 장비와 함께 사용하는 범위는 별도로 확인하셔야 합니다. 그러나 특정 살롱에서 특정 장비와 함께 사용하는 범위는 별도의 device classification, intended use, professional scope 및 지역 요건을 확인해야 합니다.</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">05</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"How is this different from salmon PDRN products?"</b><span class="kr">다른 종류의 원료입니다. 저희 핑크는 INCI 기준 Hydrolyzed DNA를 사용하며, 원료 스펙이 확정되기 전에는 PDRN이라는 명칭 자체를 쓰지 않습니다. 어느 쪽이 더 우수하다는 비교 임상은 존재하지 않으므로, 그런 주장은 하지 않습니다.</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">06</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"Can I combine it with my devices — LED, ultrasound, cryo, microneedling?"</b><span class="kr">장비 병용은 제품 intended use와 장비 분류·사용설명, 스페인의 적용 규정과 지역 요건을 모두 확인해야 합니다. <b>여기서 경계는 “장비인가 아닌가”가 아니라 “피부를 침습하는가 아닌가”입니다.</b><span class="tdo" data-ck="13, 28" data-todo="스페인·EU에서 어떤 장비 분류가 어떤 조건에서 허용되는지, needle 사용 장비와 비침습 장비의 경계를 파트너와 문서 수준에서 확정하십시오." title="스페인·EU에서 어떤 장비 분류가 어떤 조건에서 허용되는지, needle 사용 장비와 비침습 장비의 경계를 파트너와 문서 수준에서 확정하십시오.">침습/비침습 경계 미정의</span> 비침습 장비와 needle을 사용하는 장비는 같은 질문이 아니며, 허용 범위도 국가마다 다릅니다. 장비 사용이 화장품의 법적 성격을 자동으로 바꾸거나 확대하지는 않으며, 반대로 저희가 특정 장비 병용을 승인해 드리는 것도 아닙니다(확인 항목 13, 28).</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">07</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"What about pregnant clients or very sensitive skin?"</b><span class="kr">첩포 시험을 먼저 하시고, 손상되거나 자극받은 피부는 피하십시오. 임신 등 의학적 상황에서는 저희가 판단을 대신하지 않습니다 — 원장님의 프로토콜과 고객 주치의의 안내를 따르십시오.</span></p></div>
-<div class="neqrow" style="grid-template-columns:44px 1fr;text-align:left;border-bottom:none">
-<p style="text-align:left;font-size:17px;font-weight:700;color:var(--lblue)">08</p>
-<p style="font-weight:400;font-size:15px;color:var(--ink)"><b style="color:var(--navy)">"Why is it a liquid, not a powder like the others?"</b><span class="kr">동결건조와 액상은 서로 다른 보존 전략입니다. 저희는 통제된 전문가 공급망을 전제로 액상 전략을 선택했고, 그 선택은 제품별 안정성 데이터로 확인되어야 합니다. 동결건조가 열등하다는 의미는 아닙니다.</span></p></div>
-</div>
-<div class="state c" style="margin-top:20px">If your question is not here, ask it now — or ask it in six months. The answer will come from the same person.<span class="kr bg">여기 없는 질문은 지금 하셔도 되고, 6개월 뒤에 하셔도 됩니다. 답하는 사람은 같은 사람입니다.</span></div>
-<div class="warn"><b>운영 주의.</b><br/>
-① <b>04번(EU 제품 적합성 vs 살롱·장비 사용범위)</b> — 자사 RP·PIF·CPSR·CPNP 진행 상태가 확정되기 전에는 "완료되어 있습니다"로 단정하지 마십시오(확인 항목 8). CPNP는 등록(registration)이 아니라 신고(notification)이며, 서류 구비가 곧 합법성 전체를 보장하는 것은 아닙니다. 현재 문안은 "유통 파트너를 통해 확인 가능"으로 작성되어 있으며, 서류 완비 확정 후 문구를 강화하십시오.<br/>
-② <b>07번(임신·민감)</b> — 어떤 경우에도 안전성을 단정하는 답변으로 확장하지 마십시오. 의학적 판단은 항상 의료인에게 넘기는 구조를 유지해야 합니다.<br/>
-③ <b>01번(주사)</b> — 현장에서 "다들 그렇게 쓰던데요"라는 반론이 나올 수 있습니다. 답은 하나로 고정하십시오: "다른 곳이 어떻게 쓰든, 이 제품의 용도는 국소 도포입니다."<br/>
-④ 답변 중 제품 효능을 확장하는 즉흥 발언이 나오기 쉬운 슬라이드입니다. 각 답변은 여기 적힌 범위를 넘지 않게 유지하십시오.</div>
-<details class="script"><summary><span class="sc-i">▶</span><span class="sc-t">발표 스크립트</span><span class="sc-m">권장 45초 / 30분 선택</span></summary><div class="sc-b">질문 시간을 갖기 전에 전문가 세미나에서 자주 받는 질문 가운데 세 개만 짚겠습니다.
-첫째, 주사하거나 마이크로니들링과 같이 써도 되느냐. 저희 제품의 intended use는 topical cosmetic application입니다. 주사나 침습적 투여용 제품이 아닙니다. 특정 장비 사용과 전문직역의 범위는 해당 스페인 규정과 지역 요건을 따로 확인해야 합니다.
-둘째, 고객에게 무엇을 약속할 수 있느냐. 치료·재생·발모 같은 의료적 표현 대신 화장품 범위의 표현을 사용해야 합니다. 그리고 진정, 보습, 컨디셔닝 같은 표현도 완제품 실증자료가 뒷받침해야 합니다.
-셋째, 스페인에서 합법이냐는 질문도 두 개로 나누어야 합니다. 제품이 EU에서 화장품으로 적법하게 유통될 수 있는지와, 특정 살롱에서 특정 장비로 어떤 방식까지 사용할 수 있는지는 같은 질문이 아닙니다. 전자는 RP, PIF, CPSR, CPNP notification, label과 claims를 확인하고, 후자는 device classification과 intended use, professional scope, 지역 요건을 별도로 확인해야 합니다.
-나머지 질문은 화면에 두겠습니다. 저희에게도 다른 공급사에게 던지는 것과 똑같은 질문을 해주십시오.</div></details>
+<details class="item" data-g="A" data-g30="A" data-m="2.5" data-m30="1.0" id="p12-faq"><summary><span class="ix">59</span><span class="sm-t"><span class="sm-h">Question Library — 37 Questions</span><span class="sm-e">질문 라이브러리 — 핵심 12문 + 심화 25문</span><span class="sm-d">7개 카테고리 · 하나의 질문에 하나의 답 · CORE 먼저, 필요하면 ADVANCED</span></span><span class="sm-m"><span class="g gA">A</span><span class="g30 g30A">30:A</span><span class="min">2분 30초</span><span class="chev">+</span></span></summary><div class="ibody">
+<p style="font-size:16px;margin-bottom:6px;color:var(--navy);font-weight:700">Before you ask — the questions I receive in every professional seminar, one answer each.</p>
+<p class="kr" style="margin-bottom:16px">질문 시간 전에 먼저 답해드립니다. 질문은 합치지 않았습니다 — <b>하나의 질문에 하나의 답</b>입니다.</p>
+<div class="qa-tools"><button class="qa-t on" data-mode="core" type="button">핵심 12문</button><button class="qa-t" data-mode="all" type="button">전체 37문</button><span class="qa-hint">발표에서는 핵심 질문을 먼저 답하고, 더 깊은 질문이 나오면 전체를 엽니다.</span></div>
+<div class="qa-lib"><div class="qa-cat"><div class="qa-ch">USE &amp; REGULATION<span class="kr lt">사용 방법과 규제</span></div><div class="qa-q core" data-q="1"><div class="qa-n">01<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Can I inject it?</p><p class="qa-kr">주사해도 되나요?</p><p class="qa-a">No. Dr. BAE products are intended for topical cosmetic application. Injection and invasive administration are not the intended use in any market.<span class="kr">아닙니다. 저희 제품의 intended use는 <b>국소 도포</b>입니다. 주사·침습적 투여는 어떤 시장에서도 intended use가 아니며 예외가 없습니다.</span></p></div></div><div class="qa-q core" data-q="2"><div class="qa-n">02<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Is the product EU-compliant?</p><p class="qa-kr">EU에서 화장품으로 적법하게 유통되는 제품인가요?</p><p class="qa-a">Compliance is demonstrated through the Responsible Person, PIF, CPSR, CPNP notification, label and claims. All four products have completed these steps and are exported to Europe.<span class="kr">EU 적합성은 RP 지정, PIF·CPSR 보유, CPNP 신고, 라벨·claim 요건으로 판단합니다. 네 제품 모두 이 절차를 마치고 유럽에 수출 중입니다. 다만 <b>CPNP는 허가가 아니라 신고(notification)</b>라는 점을 구분해 주십시오.</span></p></div></div><div class="qa-q core" data-q="3"><div class="qa-n">03<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Can I use it with my devices?</p><p class="qa-kr">LED·초음파·크라이오·마이크로니들링 장비와 같이 써도 되나요?</p><p class="qa-a">It depends on the device. Product intended use and device use are separate questions.<span class="kr">장비마다 다릅니다. 제품의 intended use와 별개로 <b>device classification, intended use, professional scope, 스페인 및 지역 규정</b>을 확인하셔야 합니다. 특히 비침습 장비와 needle을 사용하는 장비를 같은 범주로 보시면 안 됩니다.<span class="tdo" data-ck="13, 28" data-todo="스페인·EU에서 어떤 장비 분류가 어떤 조건에서 허용되는지, needle 사용 장비와 비침습 장비의 경계를 파트너와 문서 수준에서 확정하십시오." title="스페인·EU에서 어떤 장비 분류가 어떤 조건에서 허용되는지, needle 사용 장비와 비침습 장비의 경계를 파트너와 문서 수준에서 확정하십시오.">침습/비침습 경계 미정의</span></span></p></div></div></div><div class="qa-cat"><div class="qa-ch">SKIN PENETRATION &amp; DELIVERY<span class="kr lt">피부 흡수와 전달</span></div><div class="qa-q core" data-q="4"><div class="qa-n">04<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">If I just apply exosomes on the skin, do they penetrate well?</p><p class="qa-kr">바르기만 해도 엑소좀이 피부로 잘 흡수되나요?</p><p class="qa-a">That cannot be assumed. The stratum corneum is built to block, not to admit.<span class="kr">자동으로 그렇게 말할 수 없습니다. 각질층은 외부 물질을 통과시키기보다 <b>막도록 설계된 장벽</b>입니다. 좋은 성분인가와 실제로 피부를 얼마나 통과하는가는 별개의 질문입니다.</span></p></div></div><div class="qa-q" data-q="5"><div class="qa-n">05</div><div class="qa-b"><p class="qa-en">If EVs can cross the blood–brain barrier, why can’t we say they penetrate skin?</p><p class="qa-kr">EV가 혈액뇌장벽도 통과한다는데 피부는 왜 못 들어가나요?</p><p class="qa-a">Different barrier. Different route. Different evidence.<span class="kr">BBB 연구는 <b>전신 투여된</b> EV와 혈액–뇌 경로에 대한 연구입니다. 화장품은 피부 표면에서 각질층을 통과해야 합니다. 장벽도, 경로도, 근거도 다릅니다.</span></p></div></div><div class="qa-q" data-q="6"><div class="qa-n">06</div><div class="qa-b"><p class="qa-en">Why is the skin barrier such a big issue?</p><p class="qa-kr">왜 피부장벽이 그렇게 중요한가요?</p><p class="qa-a">Because it is a biological barrier against entry and water loss — which is why ingredient science and delivery science must be read separately.<span class="kr">각질층은 외부 물질의 침입과 수분 손실을 막는 생물학적 장벽이기 때문입니다. 그래서 <b>ingredient science와 delivery science를 분리해서</b> 보아야 합니다.</span></p></div></div></div><div class="qa-cat"><div class="qa-ch">COUNT, IDENTITY &amp; PURITY<span class="kr lt">개수 · 정체성 · 순도</span></div><div class="qa-q core" data-q="7"><div class="qa-n">07<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">How many exosomes are in it?</p><p class="qa-kr">엑소좀 개수는 몇 개인가요?</p><p class="qa-a">The figure will be stated once the unit, testing body, test date and NTA protocol are fixed — and it will be called particle concentration, not exosome count.<span class="kr">단위·측정기관·측정일·NTA protocol이 확정된 뒤에 말씀드리겠습니다. 더 중요한 것은 <b>NTA에서 얻은 particle concentration을 곧바로 exosome count라고 부르면 안 된다</b>는 점입니다. 숫자가 확정되면 공개하되, 그 숫자를 exosome number로 과장하지는 않겠습니다.</span></p></div></div><div class="qa-q core" data-q="8"><div class="qa-n">08<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Is a higher exosome count better?</p><p class="qa-kr">엑소좀 개수가 많을수록 좋은 건가요?</p><p class="qa-a">No. Count is a specification, not a performance metric.<span class="kr">아닙니다. 국소 도포 EV에 대해 확립된 dose–response 관계가 아직 없습니다. 높은 particle count가 반드시 더 많은 유효 EV를 뜻하지도 않습니다. 비소포성 입자나 함께 분리된 물질도 계수에 영향을 줍니다.</span></p></div></div><div class="qa-q core" data-q="9"><div class="qa-n">09<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Does NTA actually count exosomes?</p><p class="qa-kr">NTA로 엑소좀 개수를 정확하게 셀 수 있나요?</p><p class="qa-a">No. NTA characterizes particle size and particle concentration.<span class="kr">NTA는 <b>입자 크기와 입자 농도</b>를 특성분석하는 방법입니다. NTA만으로는 측정된 입자 하나하나가 엑소좀이라는 것도, EV라는 것도 확립되지 않습니다.</span></p></div></div><div class="qa-q" data-q="10"><div class="qa-n">10</div><div class="qa-b"><p class="qa-en">How do you verify purity?</p><p class="qa-kr">순도는 어떻게 확인하나요?</p><p class="qa-a">There is no single “purity %” that applies across EV products.<span class="kr">EV 분야에는 모든 제품에 적용되는 하나의 순도 수치가 존재하지 않습니다. “99% purity” 같은 숫자만 듣기보다 <b>어떤 분리법을 썼고, 무엇을 측정했으며, 어떤 characterization을 했는지</b>를 확인하십시오. 저희는 microfiltration → nanofiltration → 입자 크기·농도 특성분석으로 설명합니다.</span></p></div></div><div class="qa-q" data-q="11"><div class="qa-n">11</div><div class="qa-b"><p class="qa-en">Is it really an “exosome,” or should we call it an EV?</p><p class="qa-kr">정말 엑소좀인가요? EV라고 불러야 하는 것 아닌가요?</p><p class="qa-a">Scientifically, a very good question. MISEV2023 recommends the broader term when biogenesis is not sufficiently demonstrated.<span class="kr">과학적으로 아주 좋은 질문입니다. MISEV2023은 생성 경로가 충분히 입증되지 않았다면 더 넓은 표현인 <b>extracellular vesicle</b>을 쓰도록 권고합니다. 식물유래 제제는 plant-derived extracellular vesicles 또는 exosome-like nanoparticles가 더 정확한 표현입니다.</span></p></div></div><div class="qa-q" data-q="12"><div class="qa-n">12</div><div class="qa-b"><p class="qa-en">What is the difference between an exosome and a liposome?</p><p class="qa-kr">엑소좀과 리포좀은 무엇이 다른가요?</p><p class="qa-a">Both can be lipid bilayer particles. The difference is the source.<span class="kr">둘 다 지질이중층 구조를 가질 수 있지만 원천이 다릅니다. <b>리포좀은 인공적으로 제조한</b> 지질이중층 입자이고, EV·엑소좀은 <b>생물학적 세포에서 유래</b>합니다. 구조만 보고 둘을 동일시할 수 없습니다.</span></p></div></div></div><div class="qa-cat"><div class="qa-ch">SOURCE &amp; SAFETY<span class="kr lt">어디에서 왔는가 · 안전성</span></div><div class="qa-q core" data-q="13"><div class="qa-n">13<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Is it human-derived?</p><p class="qa-kr">인체유래 엑소좀인가요?</p><p class="qa-a">No. The Dr. BAE line uses plant-derived EVs from Centella asiatica callus.<span class="kr">아닙니다. 저희 라인은 <b>식물유래</b>, 병풀(Centella asiatica) 캘러스 유래 EV를 사용합니다.</span></p></div></div><div class="qa-q" data-q="14"><div class="qa-n">14</div><div class="qa-b"><p class="qa-en">Why does human-derived versus plant-derived matter?</p><p class="qa-kr">인체유래인지 식물유래인지가 왜 중요한가요?</p><p class="qa-a">Source changes biological variability, safety control and regulatory classification.<span class="kr">source가 달라지면 biological variability, safety control, regulatory classification이 모두 달라집니다. EU 화장품 규정 Annex II는 <b>인체 유래 세포·조직·산물</b>을 금지 목록에 포함하고 있습니다.</span></p></div></div><div class="qa-q" data-q="15"><div class="qa-n">15</div><div class="qa-b"><p class="qa-en">Are human-derived EVs more effective because regulation is stricter?</p><p class="qa-kr">규제가 더 엄격한 걸 보면 인체유래가 더 효과가 센 것 아닌가요?</p><p class="qa-a">That inference does not hold.<span class="kr">그렇게 설명하시면 안 됩니다. 규제 복잡성은 donor variability, 감염인자 관리, batch consistency, purity, potency 같은 <b>생물학적 제제 관리 문제</b> 때문이지 “효과가 더 강해서”라는 증거가 아닙니다.</span></p></div></div><div class="qa-q" data-q="16"><div class="qa-n">16</div><div class="qa-b"><p class="qa-en">Why did Dr. BAE choose plant CICA EVs?</p><p class="qa-kr">왜 병풀 유래 Plant EV를 선택했나요?</p><p class="qa-a">A balance of science, safety, source clarity, regulatory compatibility and scalability.<span class="kr">science, safety, source clarity, regulatory compatibility, scalability의 균형을 고려한 선택입니다. <b>“식물이라서 더 좋다”는 우열 논리가 아닙니다.</b></span></p></div></div><div class="qa-q" data-q="17"><div class="qa-n">17</div><div class="qa-b"><p class="qa-en">What about pregnant clients or very sensitive skin?</p><p class="qa-kr">임산부나 매우 민감한 피부에는요?</p><p class="qa-a">Avoid compromised or irritated skin and patch test where appropriate. Medical situations are for the client’s physician to advise on.<span class="kr">손상되거나 자극받은 피부에는 사용을 피하고, 필요하면 patch test를 시행하십시오. 임신 등 의학적 상황은 화장품 회사나 에스테티션이 대신 판단할 영역이 아니므로 <b>고객의 의료진 안내</b>를 따릅니다.</span></p></div></div></div><div class="qa-cat"><div class="qa-ch">FORMULATION &amp; PRODUCT<span class="kr lt">원료가 아니라 완제품을 보는 질문</span></div><div class="qa-q core" data-q="18"><div class="qa-n">18<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">What is in the product besides the EVs?</p><p class="qa-kr">엑소좀 말고 무엇이 들어 있나요?</p><p class="qa-a">A booster is not an exosome. A booster is a formulation that contains one.<span class="kr">아주 중요한 질문입니다. 식물유래 EV, 비타민 및 유도체, peptide system 또는 Hydrolyzed DNA, 그리고 vehicle·base의 조합으로 보셔야 합니다.</span></p></div></div><div class="qa-q" data-q="19"><div class="qa-n">19</div><div class="qa-b"><p class="qa-en">Is the exosome the most important ingredient in the bottle?</p><p class="qa-kr">엑소좀이 이 제품에서 가장 중요한 성분인가요?</p><p class="qa-a">That is too simple. Finished-product performance comes from the whole formulation.<span class="kr">그렇게 단순화할 수 없습니다. 완제품의 성능은 <b>formulation 전체</b>가 결정합니다. EV를 포함해 어느 하나의 hero ingredient가 완제품을 혼자 설명하지 않습니다.</span></p></div></div><div class="qa-q core" data-q="20"><div class="qa-n">20<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">Why is Dr. BAE liquid instead of lyophilized powder?</p><p class="qa-kr">왜 동결건조 분말이 아니라 액상인가요?</p><p class="qa-a">Lyophilized and liquid are different preservation strategies, not a ranking.<span class="kr">동결건조와 액상은 서로 다른 preservation strategy입니다. 어느 한쪽이 자동으로 우월하다는 뜻이 아닙니다. 저희는 <b>통제된 전문가 유통 체계</b>를 전제로 액상 전략을 택했고, 최종 평가는 제품별 stability data로 하셔야 합니다.</span></p></div></div><div class="qa-q" data-q="21"><div class="qa-n">21</div><div class="qa-b"><p class="qa-en">Does “liquid” simply mean the EVs are mixed with water?</p><p class="qa-kr">액상이라는 건 그냥 물에 섞었다는 뜻인가요?</p><p class="qa-a">No. Holding an ingredient and building a stable finished formulation are different problems.<span class="kr">아닙니다. 원료를 가지고 있는 것과 <b>안정적인 완제품을 만드는 것</b>은 다른 문제입니다. pH, vehicle, 보존, 배합 적합성, 안정성을 함께 설계해야 합니다.</span></p></div></div><div class="qa-q" data-q="22"><div class="qa-n">22</div><div class="qa-b"><p class="qa-en">Does a featured ingredient mean it has the highest concentration?</p><p class="qa-kr">광고에 크게 적힌 성분이 가장 많이 들어 있나요?</p><p class="qa-a">Not necessarily. Featured active and highest-concentration ingredient are different concepts.<span class="kr">반드시 그렇지 않습니다. 소구 성분과 최고 함량 성분은 다른 개념입니다. 제품을 평가하실 때는 <b>전성분표 전체</b>를 확인하십시오.</span></p></div></div><div class="qa-q core" data-q="23"><div class="qa-n">23<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">How is this different from PDRN-type products?</p><p class="qa-kr">PDRN 계열 제품과 무엇이 다른가요?</p><p class="qa-a">Separate the ingredient category from the route of administration.<span class="kr">ingredient category와 route of administration을 분리해서 보셔야 합니다. PINK는 INCI상 <b>Hydrolyzed DNA</b>를 사용하며, 원료 spec이 확정되기 전에는 PDRN이라고 단정하지 않습니다. 직접 비교 임상이 없으므로 어느 쪽이 더 좋다고도 말하지 않습니다.</span></p></div></div><div class="qa-q" data-q="24"><div class="qa-n">24</div><div class="qa-b"><p class="qa-en">Does using the same product mean every salon should use the same protocol?</p><p class="qa-kr">같은 제품이면 모든 샵에서 똑같이 쓰면 되나요?</p><p class="qa-a">No.<span class="kr">아닙니다. <b>고객 상태 + 제품 역할 + 도포 방법 + 전문가의 판단</b>을 함께 고려해야 합니다.</span></p></div></div><div class="qa-q" data-q="25"><div class="qa-n">25</div><div class="qa-b"><p class="qa-en">How important are storage and handling?</p><p class="qa-kr">보관과 취급이 그렇게 중요한가요?</p><p class="qa-a">Important. For EV formulations, quality includes distribution, storage and handling — not only manufacturing.<span class="kr">중요합니다. formulation stability가 중요한 제품은 제조 시점뿐 아니라 <b>유통·보관·현장 취급까지</b> 완제품 품질의 일부로 보아야 합니다. 다만 발표에서는 확정된 제품별 보관 사양만 말씀하십시오.</span></p></div></div></div><div class="qa-cat"><div class="qa-ch">EVIDENCE &amp; CLAIMS<span class="kr lt">연구 결과를 어디까지 말할 수 있는가</span></div><div class="qa-q core" data-q="26"><div class="qa-n">26<span class="qa-core">CORE</span></div><div class="qa-b"><p class="qa-en">What can I actually promise my clients?</p><p class="qa-kr">고객에게 실제로 무엇을 말할 수 있나요?</p><p class="qa-a">No medical language. Cosmetic-range wording only, and only within what finished-product evidence supports.<span class="kr">치료·재생·발모 같은 <b>의료적 표현은 사용하지 않습니다.</b> 보습·컨디셔닝·피부 편안함 같은 화장품 범위 표현도 <b>완제품의 실증자료가 뒷받침하는 범위에서만</b> 사용합니다.</span></p></div></div><div class="qa-q" data-q="27"><div class="qa-n">27</div><div class="qa-b"><p class="qa-en">Is there scientific research on plant-derived EVs?</p><p class="qa-kr">Plant EV에도 실제 과학적 연구가 있나요?</p><p class="qa-a">Yes — but evidence maturity must be stated accurately.<span class="kr">있습니다. 피부 생물학, 장벽, 염증 반응, 항산화·광노화, 창상 모델, 두피·모발 등에서 연구가 늘고 있습니다. 다만 <b>상당수는 아직 전임상 연구</b>입니다.</span></p></div></div><div class="qa-q" data-q="28"><div class="qa-n">28</div><div class="qa-b"><p class="qa-en">Do wound-healing studies prove that this cosmetic regenerates skin?</p><p class="qa-kr">상처치유 동물실험이 있으면 이 화장품이 피부를 재생한다는 뜻인가요?</p><p class="qa-a">No. Ingredient-level preclinical research ≠ finished cosmetic efficacy.<span class="kr">아닙니다. 피부 회복 동물모델은 <b>학술적 원료 연구 맥락</b>이며 완제품의 치료·재생 claim 근거가 아닙니다.</span></p></div></div><div class="qa-q" data-q="29"><div class="qa-n">29</div><div class="qa-b"><p class="qa-en">Do hair-model studies mean the scalp product grows hair?</p><p class="qa-kr">모발 동물실험이 있으면 발모 제품이라는 뜻인가요?</p><p class="qa-a">No.<span class="kr">아닙니다. 발모, 재생, 탈모 치료, 모낭 재생은 <b>화장품 두피 컨디셔닝과 전혀 다른 claim</b>입니다. 전임상 연구를 완제품의 발모 효능으로 연결하시면 안 됩니다.</span></p></div></div><div class="qa-q" data-q="30"><div class="qa-n">30</div><div class="qa-b"><p class="qa-en">If the ingredient has research, does that prove the finished product works?</p><p class="qa-kr">원료 논문이 있으면 완제품 효과도 입증된 것 아닌가요?</p><p class="qa-a">No. Ingredient evidence ≠ finished-product evidence.<span class="kr">아닙니다. 원료의 농도, 처방, 안정성, 적용 경로, 사용량이 모두 달라지기 때문입니다.</span></p></div></div><div class="qa-q" data-q="31"><div class="qa-n">31</div><div class="qa-b"><p class="qa-en">How mature is the evidence for cosmetic EVs today?</p><p class="qa-kr">화장품용 EV 연구는 현재 어느 정도까지 검증됐나요?</p><p class="qa-a">Early, but accumulating.<span class="kr">EV는 비타민처럼 수십 년간 축적된 화장품 원료 범주가 아닙니다. 의미 있는 화장품 사용과 표준화 논의가 본격화된 것은 비교적 최근이고, 상당수 연구가 아직 전임상입니다. <b>가능성과 한계를 동시에 인정하는 것</b>이 적절합니다.</span></p></div></div></div><div class="qa-cat"><div class="qa-ch">HOW TO CHOOSE AN EXOSOME PRODUCT<span class="kr lt">구매 전에 물어야 할 여섯 가지</span></div><div class="qa-q" data-q="32"><div class="qa-n">32</div><div class="qa-b"><p class="qa-en">What is the actual source of the EV?</p><p class="qa-kr">이 엑소좀의 실제 source는 무엇인가요?</p><p class="qa-a">Check the INCI and the source documentation, not the front-label word “exosome”.<span class="kr">앞면에 적힌 “엑소좀”이라는 단어보다 <b>실제 INCI와 원천 증빙 문서</b>를 확인하십시오.</span></p></div></div><div class="qa-q" data-q="33"><div class="qa-n">33</div><div class="qa-b"><p class="qa-en">Who designed the formulation?</p><p class="qa-kr">이 처방을 누가 만들었나요?</p><p class="qa-a">Is there a named person you can actually ask?<span class="kr">연구자나 처방 책임자가 누구인지, <b>실명이 공개되어 있고 질문할 수 있는 사람인지</b> 확인하십시오.</span></p></div></div><div class="qa-q" data-q="34"><div class="qa-n">34</div><div class="qa-b"><p class="qa-en">Is the research about the ingredient or the finished product?</p><p class="qa-kr">보여주는 연구가 원료 연구인가요, 완제품 연구인가요?</p><p class="qa-a">These are not the same evidence.<span class="kr">반드시 구분하십시오. 두 근거는 같은 것이 아닙니다.</span></p></div></div><div class="qa-q" data-q="35"><div class="qa-n">35</div><div class="qa-b"><p class="qa-en">What can this product NOT do?</p><p class="qa-kr">이 제품이 할 수 없는 것은 무엇인가요?</p><p class="qa-a">A good supplier can state the limits of their own product.<span class="kr">좋은 공급사는 자기 제품의 한계를 설명할 수 있어야 합니다. <b>과장광고 여부를 확인하는 가장 좋은 질문</b>입니다.</span></p></div></div><div class="qa-q" data-q="36"><div class="qa-n">36</div><div class="qa-b"><p class="qa-en">How do you demonstrate EU regulatory compliance?</p><p class="qa-kr">EU 규제 적합성을 어떻게 증명하나요?</p><p class="qa-a">Through documents and procedures: RP, PIF, CPSR, CPNP notification, label and claims.<span class="kr">RP, PIF, CPSR, CPNP 신고, 라벨·claim 등 <b>실제 문서와 절차</b>로 확인하십시오.</span></p></div></div><div class="qa-q" data-q="37"><div class="qa-n">37</div><div class="qa-b"><p class="qa-en">Should I read the entire INCI list?</p><p class="qa-kr">전성분표를 끝까지 봐야 하나요?</p><p class="qa-a">Yes.<span class="kr">그렇습니다. 하나의 hero ingredient만 보지 말고 <b>처방 전체</b>를 보십시오.</span></p></div></div></div></div>
+<div class="qa-more"><b>More technical questions? I have them too.</b><span class="kr">더 기술적인 질문도 준비되어 있습니다 — 위의 <b>전체 37문</b>을 누르십시오.</span></div>
+<p class="src">입자 농도 수치는 단위·측정기관·측정일·NTA protocol이 확정된 뒤에만 공개합니다. 그 전에는 구두로도 언급하지 않습니다.</p>
 </div></details>
 </section>
 <!-- ============ APPENDIX ============ -->
 <section class="part" id="apx">
-<div class="pn">Appendix</div>
-<h2>Appendix — Backup Slides &amp; Pre-Flight Checklist<span class="pcount">부록</span></h2>
+<div class="pn">Appendix <span class="pn-temp">임시</span></div>
+<h2>Appendix — Backup Slides &amp; Pre-Flight Checklist<span class="apx-temp">최종본에서 삭제 예정 · 현재는 메모용</span><span class="pcount">부록</span></h2>
 <div id="apxbar"></div>
 <div class="state sand c" style="font-size:17px">The main flow keeps only what must be said. Everything below is kept for the moment someone asks.<span class="kr bg">본편에는 <b>반드시 말해야 하는 것</b>만 남겼습니다. 아래 백업 슬라이드는 질문이 들어왔을 때 꺼내 쓰기 위한 것입니다 — <b>전체 모드</b>(키보드 <b>W</b> 또는 상단 모드 버튼)로 전환하면 즉시 나타납니다.</span></div>
 
@@ -3286,7 +3267,7 @@ apply(); openHash(); upd(); markToc();
    문서 버전 — 여기 두 줄만 고치면 상단 빨간 배너 · 헤더 칩 · 브라우저 탭 제목이
    모두 자동으로 바뀝니다. 다른 곳은 손대지 마십시오.
    ===================================================================== */
-var DOC_VERSION = 25;                 // ← 개정할 때마다 이 숫자만 올리십시오
+var DOC_VERSION = 26;                 // ← 개정할 때마다 이 숫자만 올리십시오
 var DOC_DATE    = '2026-08-25';       // ← 개정일
 /* ===================================================================== */
 (function(){
@@ -3634,6 +3615,29 @@ var DOC_DATE    = '2026-08-25';       // ← 개정일
     var s=d.closest('section.part'); if(s) s.style.display='';
     d.scrollIntoView({block:'center'});
   });
+})();
+
+/* v26 · 질문 라이브러리 — CORE / 전체 전환 */
+(function(){
+  var lib=document.querySelector('.qa-lib'); if(!lib) return;
+  lib.classList.add('core-only');
+  function hideEmpty(){
+    var core=lib.classList.contains('core-only');
+    lib.querySelectorAll('.qa-cat').forEach(function(c){
+      c.style.display = (core && !c.querySelector('.qa-q.core')) ? 'none' : '';
+    });
+  }
+  document.querySelectorAll('.qa-t').forEach(function(b){
+    b.onclick=function(){
+      document.querySelectorAll('.qa-t').forEach(function(x){x.classList.remove('on');});
+      b.classList.add('on');
+      lib.classList.toggle('core-only', b.dataset.mode==='core');
+      hideEmpty();
+      var more=document.querySelector('.qa-more');
+      if(more) more.style.display = b.dataset.mode==='core' ? '' : 'none';
+    };
+  });
+  hideEmpty();
 })();
 </script>
 </body>
